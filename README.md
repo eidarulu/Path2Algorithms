@@ -3,72 +3,30 @@
 Welcome to my **Path2Algorithms** repository!<br>
 This repository serves as my personal learning journal, where I document the algorithms I’ve studied and implemented I have learned during my **university algorithms course** and while reading the book _Grokking Algorithms_ by Aditya Bhargava. I created it primarily for myself, as a way to solidify and track my understanding of key concepts. At the same time, I hope it can demonstrate my commitment to mastering algorithms and provide others with insight into my learning process. Thank you for taking the time to explore my work!
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Course Algorithms](#course-algorithms)
-3. [Book Algorithms](#book-algorithms)
-4. [Project Structure](#project-structure)
-5. [Future Plans](#future-plans)
-
----
-
-## Introduction
-
-Algorithms implemented in Python & Kotlin. The algorithms are categorized by type (e.g., sorting, searching, graph algorithms), and each language has its own folder.
-
-## Course Algorithms
-
-Algorithms learned in the **university course**:
-
-- **Sorting**: Merge Sort, Quick Sort
-- **Searching**: Binary Search
-- **Graph Traversal**: BFS, DFS
-- **Recursion and Backtracking**
-
-For each algorithm, I provide:
-- **Time and space complexity**.
-- **Step-by-step explanation**.
-- **Practical use cases**.
-
----
-
-## Book Algorithms
-
-Algorithms from _Grokking Algorithms_:
-
-- **Binary Search**
-- **Selection Sort**
-- **Dijkstra’s Algorithm**
-- **Greedy Algorithms**
-
-Implemented in **Kotlin** and **Python** for comparison.
-
----
-
-## Project Structure
-
-Each folder contains subfolders for different algorithm types (e.g., sorting, searching).
-
-## Future Plans
-
-- Implement more advanced algorithms from upcoming **Advanced Algorithms** courses.
-- Add explanations for **algorithm design paradigms** like Divide and Conquer, Dynamic Programming, and Greedy algorithms.
-- Refine the code to be **interview-ready** and share it publicly on GitHub.
-
 ## Project Structure
 
 - `python/`: Contains Python implementations of algorithms.
 - `kotlin/`: Contains Kotlin implementations of algorithms.
 
-### Algorithm Categories:
-- **Sorting**: Bubble Sort, Quick Sort
-- **Searching**: Binary Search, Linear Search
-- **Graph Algorithms**: BFS, DFS
+Algorithms implemented in Python & Kotlin. The algorithms are categorized by type (e.g., sorting, searching, graph algorithms), and each language has its own folder.~~~~
+Each folder contains subfolders for different algorithm types (e.g., sorting, searching).
 
-## How to Run
+---
+### Table of Contents to My Notes
+1. [Big O notation](#big-o-notation)
 
-### Python
-```bash
-# Navigate to the python folder
-cd python/sorting
-python bubble_sort.py
+### Big O notation
+**Big O** notation tells how fast an algorithm is. Algorithm speed isn’t measured in seconds but in growth of the number of operations. Instead of seconds, we talk about how quickly the run time of an algorithm increases as the size of the input increases.
+
+#### Big O establishes a worst-case run time.<br>
+Suppose you’re using *Simple Search* to look for a person in the phone book. If you’re looking for someone who is in the first entry in the phone book you'll find it on the first try. That’s the best-case scenario. Did this algorithm take O(n) or  O(1) time? We use **Big O** notation for worst-case scenario analysis. So you can say that in the worst case, you’ll have to look at every entry in the phone book. That’s O(n) time. It’s a reassurance — you know that simple search will never be slower than O(n) time.
+
+> Along with the worst-case run time, it’s also important to look at the average-case run time.
+
+Some common big O run times you’ll encounter a lot, sorted from fastest to slowest:
+
+- O(log n), also known as log time. Example: binary search.
+- O(n), also known as linear time. Example: simple search.
+- O(n * log n). Example: a fast sorting algorithm, like quicksort.
+- O(n2). Example: a slow sorting algorithm, like selection sort.
+- O(n!). Example: a really slow algorithm, like the traveling salesperson.
